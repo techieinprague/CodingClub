@@ -1,0 +1,150 @@
+/* Body */
+body{
+   position: relative;
+   width: 100%;
+   overflow-x: hidden;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+
+/* Video */
+video{
+    position: fixed;
+    min-height: 100%;
+    min-width: 100%;
+    z-index: -100;
+}
+
+/* media query ::: video --> picture  */
+@media (max-width:768px){
+    body{
+       background: url(images/bg.jpg) center center fixed;
+       background-size : cover;
+    } 
+    video{
+        display: none;
+    }
+} 
+@media (max-width:768px){
+    .carousel-item img{
+        height: 200px;
+    }
+    .carousel-item h5{
+        font-size: 22px;
+    }
+}
+@media (max-width:400px){
+    .carousel-inner .carousel-item img{
+        height: 100px;
+    }
+    .carousel-inner h5{
+        font-size: 10px;
+    }
+}
+
+
+/* Style navBar */
+.navbar{
+	background-color: rgba(17, 71, 17, 0.1);
+ } 
+ .navbar-brand h2{
+    font-weight: 800;
+    font-size: 1.8em;
+    letter-spacing: 2px;
+    font-family: monospace;
+   
+    color: rgb(4, 97, 12);
+ }
+.nav-item a{
+    color: whitesmoke;
+    font-size: 1.5em;
+    font-family: monospace;
+    letter-spacing: 1.3px;
+}
+.nav-item a:hover{
+    color:  rgb(4, 97, 12);
+}
+.nav-item a:active{
+    color:  rgb(4, 97, 12);
+}
+
+/* --jumbotron-- */
+.jumbotron{
+    color: #fff;
+    text-align: center;
+    padding-top: 15% ;
+    margin-bottom: 120px;
+}
+#home h1{
+    margin-bottom: 30px;
+}
+#home h2{
+    margin-bottom: 50px;
+}
+#home .btn{
+    padding: 10px 20px;
+    color: white;
+    background-color: transparent;
+    border-color: green;
+}
+#home .btn:hover{
+    background-color: green
+}
+/* ------about section------ */
+.about{
+    color: #fff;
+    text-align: center;
+    padding-top: 100px;
+}
+.about h2{
+    font-weight: bold;
+}
+.about p{
+    font-size: 17px;
+}
+.aboutImage{
+    height: 120px;
+}
+.about .container{
+    max-width: 1300px;
+}
+
+/* ------Carousel------------- */
+#learnMore{
+    padding-top: 100px;
+    margin-bottom: 30px;
+}
+#myCarousel{
+    width: 45%;
+    margin: 0 auto;
+}
+.carousel-item img{
+    height: 400px;
+    background-color: rgba(0,0,0,0.9);
+}
+.carousel-caption{
+    position: relative;
+    left: auto;
+    right: auto;
+}
+.carousel-caption h5{
+    padding: 10px;
+}
+/*---Footer---*/
+.footer{
+    background-color: rgba(0,0,0,0.9);
+    color: white;
+    font-size: 15px;
+    letter-spacing: 2px;
+    padding: 10px 0px;
+    width: 100%;
+}
+.footer .container {
+    margin-left: 0; 
+    margin-top: 10px;
+}

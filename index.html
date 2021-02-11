@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en" id="top">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!-- FA -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">  
+    <link rel="stylesheet" href="styling.css">
+    <title>Learn programming</title>
+  </head>
+  <body data-spy="scroll" data-target="#mynavBar">
+    <!-- Video on the body element -->
+    <video autoplay loop muted id="bgVideo">
+        <source src="images/video.mp4" type="video/mp4">
+    </video>
+    <!-- Nav bar with scroll spy -->
+    <nav role="navigation" class="navbar navbar-expand-lg sticky-top" id="mynavBar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#top"><h2>CodingClub</h2></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span><i class="fas fa-chevron-circle-down fa-2x" style="color: green;"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#top">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#myCarousel">Learn</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">About</a>
+                </li>
+          
+            </div>
+
+        </div>
+    </nav>
+    <!-- Home section -->
+    <div class="jumbotron" id="home">
+        <div class="container">
+            <h1>{Programming is fun ;}</h1>
+            <h2>Want to learn how to code?</h2>
+            <p><a href="https://www.linkedin.com/learning/?trk=nav_neptune_learning" target="_blank"class="btn">Join us now!</a></p>
+
+        </div>
+    </div>
+
+    <!-- About using grid system -->
+    <div class="about" id="about" >
+        <div class="container">
+            <div class="row" data-target="#mynavBar" data-offset="0">
+                <div class="col-md-4" >
+                    <img src="images/tutors.png" class="aboutImage">
+                    <h2>High quality lectures</h2>
+                    <p>Lectures & challenges curated by best class tutors in the world</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="images/80hrs.png" class="aboutImage">
+                    <h2>80+ hrs of rich content</h2>
+                    <p>Learn all major development stacks</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="images/community.png " class="aboutImage">
+                    <h2>Get helptime!</h2>
+                    <p>Community forums to help you through the journey.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Course glossary -->
+    <div id="learnMore"class="container-fluid" >
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+              <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+              <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+              <li data-bs-target="#myCarousel" data-bs-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/JS.jpg" class="d-block w-100" alt="JS">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>JavaScript</h5>
+                  <p>Learn the world's most popular programming language</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/python.jpg" class="d-block w-100" alt="python">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Python</h5>
+                  <p>Step into the world of AI & ML using python</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/mongoDB.jpg" class="d-block w-100" alt="MongoDB">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>MongoDB</h5>
+                  <p>Learn programming foundations & databases like MongoDB.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/react.jpg" class="d-block w-100" alt="react">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>React</h5>
+                  <p>Learn React an open-source, front end, JavaScript library for building user interfaces or UI components maintained by Facebook</p>
+                </div>
+              </div>
+            
+
+                <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
+                <span aria-hidden="true"><i class="fas fa-chevron-circle-left fa-2x" style="color: green;"></i></span>
+                <span class="visually-hidden">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
+                <span aria-hidden="true"><i class="fas fa-chevron-circle-right fa-2x" style="color: green;"></i></span>
+                <span class="visually-hidden">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <p>&copy;2021 Aslah Hussain. Icons from LogoMakr</p>
+        </div>
+    </div>
+    <!-- JS for navbar -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script>
+
+        document.getElementsByClassName('carousel').carousel({
+            interval : 1000
+        });
+
+        window.addEventListener("resize" , ResizeWindow);
+        function ResizeWindow(){
+            var dataSpylist = [].slice.call(document.querySelectorAll('[data-spy = "scroll"]'));
+            dataSpylist.forEach(function (dataSpyElement){
+                bootstrap.ScrollSpy.getInstance(dataSpyElement).refresh();
+            });
+        }
+        
+    </script>
+    
+  </body>
+</html>
